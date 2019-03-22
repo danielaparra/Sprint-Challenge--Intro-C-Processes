@@ -47,8 +47,10 @@ int main(int argc, char **argv)
 
       // Use stat to find file info for each file name path from directory entry.
       if(!stat(path, &fileinfo)) {
+
         // Print file size and file name with left and right alignments.
         printf("%10lld %-14s\n", fileinfo.st_size, d->d_name);
+      
       // Present no fileinfo error for file name to user.
       } else {
         printf("No fileinfo for file: %s\n", d->d_name);
