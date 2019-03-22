@@ -57,7 +57,7 @@ int main(int argc, char **argv)
 
   // If can't open directory, present error.
   } else {
-    printf("Error: Unable to open directory. Could be spelling or case error.\n");
+    printf("Error: Unable to open directory.\nCould be directory doesn't exist or was spelled incorrectly(case sensitive).\n");
   }
 
   // Close directory
