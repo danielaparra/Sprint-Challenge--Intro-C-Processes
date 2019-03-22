@@ -1,10 +1,10 @@
 **1. List all of the main states a process may be in at any point in time on a standard Unix system. Briefly explain what each of these states means.**
 
-Running - The process is either running or waiting for the CPU to process it.
-Interruptible Sleep - The process is waiting for an event to complete.
-Uninterruptible Sleep - The process can't be killed or interrupted. Usually needs a reboot to make it go away.
-Zombie - The process is terminated but waiting for their exit status to be collected.
-Stopped - The process has been stopped or suspended.
+Created - The process was just created and waiting to enter Ready state.
+Ready - The process has been loaded into main memory and waiting the for a CPU to process it.
+Running - The process is either running and executed by one of the CPUs.
+Blocked - The process is in a standstill and waiting for an event to complete. 
+Terminated - The process has been terminated after completing its execution or by being explicitly killed.
 
 **2. What is a zombie process?**
 The zombie process is when a process is terminated but waiting for their exit status to be collected.
