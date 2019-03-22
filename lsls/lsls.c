@@ -27,6 +27,14 @@ int main(int argc, char **argv)
   }
 
   // Open directory
+  // Check if dirname and directory for dirname equal NULL.
+  if (dirname != NULL && dp = opendir(dirname) != NULL) {
+    
+  // If can't open directory, present error.
+  } else {
+    printf("Error: Unable to open directory. Could be spelling or case error.\n");
+    exit(0);
+  }
 
   // Repeatly read and print entries
 
