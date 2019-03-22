@@ -21,10 +21,8 @@ int main(int argc, char **argv)
     strcpy(dirname, ".");
   // Otherwise try opening directory that use specified.
   } else if (argc == 2) {
-    printf("here2\n");
     // Grab second argument that user inputted.
-    strcpy(dirname, argv[-1]);
-    printf("%s\n", dirname);
+    strcpy(dirname, argv[1]);
   // If command line arguments not in the right format, present error to user.
   } else {
     dirname = NULL;
